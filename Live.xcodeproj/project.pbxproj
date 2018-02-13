@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AD48E2A20331A7D00C7723C /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD48E2920331A7D00C7723C /* IJKMediaFramework.framework */; };
 		2D0B6E3B1F4EC4E0007C2BD7 /* LLAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B6E3A1F4EC4E0007C2BD7 /* LLAdModel.m */; };
 		2D0B6E431F53CC96007C2BD7 /* LLRecommandHeadBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B6E421F53CC96007C2BD7 /* LLRecommandHeadBottomView.m */; };
 		2D0B6E461F542673007C2BD7 /* LLRecommandButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B6E451F542673007C2BD7 /* LLRecommandButton.m */; };
@@ -86,6 +87,7 @@
 
 /* Begin PBXFileReference section */
 		03B2E0E94D14A66479F1AF5C /* libPods-Live.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Live.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD48E2920331A7D00C7723C /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		2D0B6E391F4EC4E0007C2BD7 /* LLAdModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLAdModel.h; sourceTree = "<group>"; };
 		2D0B6E3A1F4EC4E0007C2BD7 /* LLAdModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLAdModel.m; sourceTree = "<group>"; };
 		2D0B6E411F53CC96007C2BD7 /* LLRecommandHeadBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLRecommandHeadBottomView.h; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				2DA873471F3C2F5800C43F7E /* libz.tbd in Frameworks */,
 				2DA873451F3C2F4B00C43F7E /* libbz2.tbd in Frameworks */,
 				2DA873431F3C2F3E00C43F7E /* OpenGLES.framework in Frameworks */,
+				0AD48E2A20331A7D00C7723C /* IJKMediaFramework.framework in Frameworks */,
 				2DA873411F3C2F2300C43F7E /* MobileCoreServices.framework in Frameworks */,
 				2DA8733F1F3C2F1800C43F7E /* MediaPlayer.framework in Frameworks */,
 				2DA8733D1F3C2EFE00C43F7E /* CoreVideo.framework in Frameworks */,
@@ -469,6 +472,7 @@
 		2DA873311F3C2E6F00C43F7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0AD48E2920331A7D00C7723C /* IJKMediaFramework.framework */,
 				2DA873461F3C2F5800C43F7E /* libz.tbd */,
 				2DA873441F3C2F4B00C43F7E /* libbz2.tbd */,
 				2DA873421F3C2F3E00C43F7E /* OpenGLES.framework */,
