@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0AD48E2A20331A7D00C7723C /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD48E2920331A7D00C7723C /* IJKMediaFramework.framework */; };
+		0AD48E2F20331BF700C7723C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AD48E3120331BF700C7723C /* InfoPlist.strings */; };
 		2D0B6E3B1F4EC4E0007C2BD7 /* LLAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B6E3A1F4EC4E0007C2BD7 /* LLAdModel.m */; };
 		2D0B6E431F53CC96007C2BD7 /* LLRecommandHeadBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B6E421F53CC96007C2BD7 /* LLRecommandHeadBottomView.m */; };
 		2D0B6E461F542673007C2BD7 /* LLRecommandButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B6E451F542673007C2BD7 /* LLRecommandButton.m */; };
@@ -88,6 +89,10 @@
 /* Begin PBXFileReference section */
 		03B2E0E94D14A66479F1AF5C /* libPods-Live.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Live.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD48E2920331A7D00C7723C /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		0AD48E2B20331BDD00C7723C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		0AD48E2C20331BDD00C7723C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		0AD48E3020331BF700C7723C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AD48E3220331BF900C7723C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		2D0B6E391F4EC4E0007C2BD7 /* LLAdModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLAdModel.h; sourceTree = "<group>"; };
 		2D0B6E3A1F4EC4E0007C2BD7 /* LLAdModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLAdModel.m; sourceTree = "<group>"; };
 		2D0B6E411F53CC96007C2BD7 /* LLRecommandHeadBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLRecommandHeadBottomView.h; sourceTree = "<group>"; };
@@ -628,6 +633,7 @@
 				2DA8734C1F3C43D900C43F7E /* LLZKCommandDefine.h */,
 				2D2640441F67E41000C37F5D /* LLNotificationKeyHeader.h */,
 				2D2640561F6A274E00C37F5D /* LLUserDefaultKeyHeader.h */,
+				0AD48E3120331BF700C7723C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -793,6 +799,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = D5347FEB1F2CBA8B00F7263B;
 			productRefGroup = D5347FF51F2CBA8B00F7263B /* Products */;
@@ -810,6 +817,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D53480071F2CBA8B00F7263B /* LaunchScreen.storyboard in Resources */,
+				0AD48E2F20331BF700C7723C /* InfoPlist.strings in Resources */,
 				D53480041F2CBA8B00F7263B /* Assets.xcassets in Resources */,
 				2DA8734A1F3C33A300C43F7E /* login_movie.mp4 in Resources */,
 				2DA8734B1F3C33A300C43F7E /* login_video.mp4 in Resources */,
@@ -944,10 +952,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0AD48E3120331BF700C7723C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AD48E3020331BF700C7723C /* en */,
+				0AD48E3220331BF900C7723C /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		D53480001F2CBA8B00F7263B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D53480011F2CBA8B00F7263B /* Base */,
+				0AD48E2B20331BDD00C7723C /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -956,6 +974,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D53480061F2CBA8B00F7263B /* Base */,
+				0AD48E2C20331BDD00C7723C /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -967,6 +986,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1015,6 +1035,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
