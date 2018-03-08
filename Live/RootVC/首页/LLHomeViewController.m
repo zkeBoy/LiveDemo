@@ -55,8 +55,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self setUI];
-    [self requestNetwork];
-    //[self addScrollViewSubViews];
+    //[self requestNetwork];
+    [self addScrollViewSubViews];
 }
 
 - (void)setUI{

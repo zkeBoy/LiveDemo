@@ -29,6 +29,7 @@
 @property (nonatomic, copy) NSString * state;
 @property (nonatomic, copy) NSString * title;
 @property (nonatomic, copy) NSString * useridx;
+@property (nonatomic, copy) NSString * showmodel;
 
 /*
  addTime = "/Date(-62135596800000)/";

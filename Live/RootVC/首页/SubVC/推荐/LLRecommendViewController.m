@@ -63,7 +63,8 @@ static NSString * cellIdentifider = @"LLRecommendCell";
 
 #pragma mark - <UITableViewDataSource>
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView { //有几个分组
-    return self.sections.count;
+    //return self.sections.count;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -79,11 +80,11 @@ static NSString * cellIdentifider = @"LLRecommendCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     LLRecommendCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifider forIndexPath:indexPath];
-    NSArray * rows = self.sections[indexPath.section];
+    //NSArray * rows = self.sections[indexPath.section];
     if (!cell.load) {
-        cell.items = rows; //
+        //cell.items = rows; //
     }else{
-        [cell reloadData:rows]; //更新数据
+        //[cell reloadData:rows]; //更新数据
     }
     return cell;
 }

@@ -39,7 +39,7 @@ static NSString * const cellIdentifier = @"LLMoreViewCell";
 - (void)setNavBarItem{
     UIButton * left = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 21)];
     [left setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
-    [left setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 18)];
+    [left setImageEdgeInsets:UIEdgeInsetsMake(10, 0, 10, 18)];
     [left addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem * leftBarItem = [[UIBarButtonItem alloc] initWithCustomView:left];
     self.navigationItem.leftBarButtonItem = leftBarItem;
@@ -56,7 +56,8 @@ static NSString * const cellIdentifier = @"LLMoreViewCell";
     
     self.tableView.mj_header = [ZKRefreshGifHeader headerWithRefreshingBlock:^{
         [self refleashHeader];
-    }]; [self.tableView.mj_header beginRefreshing];
+    }];
+    [self.tableView.mj_header beginRefreshing];
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         self.currentPage ++;
         [self refleashFooter];
@@ -92,7 +93,19 @@ static NSString * const cellIdentifier = @"LLMoreViewCell";
     [[LLLivePersonManager livePersonManager] requestMiaoXingLivesWithURL:liveURL response:^(NSArray * arr) {
         if (arr.count) {
             [self.liveArray addObjectsFromArray:arr];
-            [self.tableView reloadData];
+            //[self.tableView reloadData];
+            NSMutableArray * indexPaths = [[NSMutableArray alloc] init];
+            for (int index=0; index<arr.count; index++) {
+                NSIndexPath * indexPath = [NSIndexPath indexPathForItem:index inSection:0];
+                [indexPaths addObject:indexPath];
+            }
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [UIView performWithoutAnimation:^{
+                    [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
+                }];
+            });
+            
         }else{
             self.currentPage --;
         }

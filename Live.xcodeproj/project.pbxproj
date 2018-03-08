@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A84D6B720516FF900070E46 /* YZMyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A84D6B320516FF800070E46 /* YZMyHeaderView.m */; };
+		0A84D6B820516FF900070E46 /* YZMyInformationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A84D6B520516FF800070E46 /* YZMyInformationVC.m */; };
+		0A84D6BB2051742800070E46 /* YZMyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A84D6BA2051742800070E46 /* YZMyTableViewCell.m */; };
 		0AD48E2A20331A7D00C7723C /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD48E2920331A7D00C7723C /* IJKMediaFramework.framework */; };
 		0AD48E2F20331BF700C7723C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AD48E3120331BF700C7723C /* InfoPlist.strings */; };
 		2D0B6E3B1F4EC4E0007C2BD7 /* LLAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B6E3A1F4EC4E0007C2BD7 /* LLAdModel.m */; };
@@ -88,6 +91,12 @@
 
 /* Begin PBXFileReference section */
 		03B2E0E94D14A66479F1AF5C /* libPods-Live.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Live.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A84D6B220516FF800070E46 /* YZMyHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZMyHeaderView.h; sourceTree = "<group>"; };
+		0A84D6B320516FF800070E46 /* YZMyHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZMyHeaderView.m; sourceTree = "<group>"; };
+		0A84D6B520516FF800070E46 /* YZMyInformationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZMyInformationVC.m; sourceTree = "<group>"; };
+		0A84D6B620516FF800070E46 /* YZMyInformationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZMyInformationVC.h; sourceTree = "<group>"; };
+		0A84D6B92051742800070E46 /* YZMyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZMyTableViewCell.h; sourceTree = "<group>"; };
+		0A84D6BA2051742800070E46 /* YZMyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZMyTableViewCell.m; sourceTree = "<group>"; };
 		0AD48E2920331A7D00C7723C /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		0AD48E2B20331BDD00C7723C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		0AD48E2C20331BDD00C7723C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -258,6 +267,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A84D6AF20516FF800070E46 /* 我的首页 */ = {
+			isa = PBXGroup;
+			children = (
+				0A84D6B020516FF800070E46 /* Model */,
+				0A84D6B120516FF800070E46 /* View */,
+				0A84D6B420516FF800070E46 /* ViewController */,
+			);
+			path = "我的首页";
+			sourceTree = "<group>";
+		};
+		0A84D6B020516FF800070E46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A84D6B120516FF800070E46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A84D6B220516FF800070E46 /* YZMyHeaderView.h */,
+				0A84D6B320516FF800070E46 /* YZMyHeaderView.m */,
+				0A84D6B92051742800070E46 /* YZMyTableViewCell.h */,
+				0A84D6BA2051742800070E46 /* YZMyTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A84D6B420516FF800070E46 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0A84D6B620516FF800070E46 /* YZMyInformationVC.h */,
+				0A84D6B520516FF800070E46 /* YZMyInformationVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		15E214D2690B796940189BB1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -651,6 +697,7 @@
 		D53480151F2CC9E400F7263B /* RootVC */ = {
 			isa = PBXGroup;
 			children = (
+				0A84D6AF20516FF800070E46 /* 我的首页 */,
 				2D0B6E6F1F5814EC007C2BD7 /* Common */,
 				D53480181F2CCB9E00F7263B /* 首页 */,
 				D53480161F2CCB9E00F7263B /* 附近 */,
@@ -895,6 +942,7 @@
 				D534801D1F2CCBD300F7263B /* LLHomeViewController.m in Sources */,
 				2D0B6EB21F5D5C2A007C2BD7 /* LLLiveTopView.m in Sources */,
 				2D307E201F6BAF8D00BD4E2E /* LLFunPlayHeadView.m in Sources */,
+				0A84D6BB2051742800070E46 /* YZMyTableViewCell.m in Sources */,
 				2D2667A61F750B7F008295A8 /* UIView+RedBadge.m in Sources */,
 				2D26679C1F727424008295A8 /* LLPersonCellView.m in Sources */,
 				2D0B6EAC1F5D53EF007C2BD7 /* LLLiveContentView.m in Sources */,
@@ -912,6 +960,7 @@
 				D534802D1F2CDC9400F7263B /* LLTabBar.m in Sources */,
 				D53480131F2CC47900F7263B /* LLMainViewController.m in Sources */,
 				D53480351F33636700F7263B /* LLSearchBar.m in Sources */,
+				0A84D6B720516FF900070E46 /* YZMyHeaderView.m in Sources */,
 				2D307E3A1F6F686700BD4E2E /* LLFunPlayItemCell.m in Sources */,
 				2D5A5FD01F4D33C600242169 /* ZKRefreshGifHeader.m in Sources */,
 				2D0B6E6B1F57E88E007C2BD7 /* LLRecommendSectionHeadView.m in Sources */,
@@ -931,6 +980,7 @@
 				2D0B6E751F58F35C007C2BD7 /* LLRecommendItemView.m in Sources */,
 				2D0B6E681F57CECC007C2BD7 /* LLRecommendCell.m in Sources */,
 				2D307E481F70B84400BD4E2E /* LLHeaderBottomView.m in Sources */,
+				0A84D6B820516FF900070E46 /* YZMyInformationVC.m in Sources */,
 				2DA8736D1F3DA75600C43F7E /* LLRecommendViewController.m in Sources */,
 				2D0B6E461F542673007C2BD7 /* LLRecommandButton.m in Sources */,
 				2D0B6E3B1F4EC4E0007C2BD7 /* LLAdModel.m in Sources */,
@@ -1088,7 +1138,7 @@
 				INFOPLIST_FILE = Live/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ZHANGKE.Live;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YuZhua.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1107,7 +1157,7 @@
 				INFOPLIST_FILE = Live/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ZHANGKE.Live;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YuZhua.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

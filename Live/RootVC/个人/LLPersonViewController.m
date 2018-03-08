@@ -37,7 +37,7 @@ static NSString * const cellIdentifying = @"llIdentifider";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.automaticallyAdjustsScrollViewInsets = false; //添加这一行UITableViewWrapperView 与 TableView frame保持一致
+    //self.automaticallyAdjustsScrollViewInsets = false; //添加这一行UITableViewWrapperView 与 TableView frame保持一致
     NSArray * array = [LLPersonSectionManager shareManager].sections;
     self.sections = [NSMutableArray arrayWithArray:array];
     [self setUI];

@@ -14,6 +14,7 @@
 #import "LLPersonViewController.h"
 #import "LLNavigationController.h"
 #import "LLTabBar.h"
+#import "YZMyInformationVC.h"
 
 @interface LLMainViewController ()<LLTabBarDelegate,UITabBarControllerDelegate,LLNaviagationControllerBarButtonDelegate>
 @property (nonatomic, strong) NSArray * classNames;
@@ -123,7 +124,7 @@
                             @"LLNewViewController",
                             @"LLLiveViewController",
                             @"LLNearViewController",
-                            @"LLPersonViewController"];
+                            @"YZMyInformationVC"];
     }
     return _classNames;
 }
