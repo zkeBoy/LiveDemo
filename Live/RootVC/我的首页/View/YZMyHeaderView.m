@@ -29,7 +29,7 @@
     [self.switchBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self).offset(14);
         make.top.equalTo(self).offset(17);
-        make.width.mas_equalTo(47);
+        make.width.mas_equalTo(50);
         make.height.mas_equalTo(12);
     }];
     
@@ -37,7 +37,7 @@
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(self.titleLabel);
         make.height.mas_equalTo(16);
-        make.left.equalTo(self.switchBtn.mas_left).offset(104);
+        make.centerX.equalTo(self);
         make.top.equalTo(self).offset(13);
     }];
     
@@ -49,7 +49,7 @@
 
 #pragma mark - Button Action
 - (void)switchUserTypeWithSender:(UIButton *)sender {
-    
+    self.switchBtn.selected = !sender.selected;
 }
 
 - (void)selectMoreMessageWithSender:(UIButton *)sender {
